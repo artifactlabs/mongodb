@@ -9,6 +9,7 @@ defmodule Mongodb.Mixfile do
      elixirc_paths: elixirc_paths(Mix.env),
      elixir: "~> 1.4",
      name: "Mongodb",
+     organization: "bunz",
      deps: deps(),
      docs: docs(),
      description: description(),
