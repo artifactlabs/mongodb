@@ -42,7 +42,7 @@ defmodule Mongodb.Mixfile do
       {:decimal,       "~> 1.0"},
       {:poolboy,       ">= 0.0.0", only: :test},
       {:jason,         "~> 1.0.0", only: :test},
-      {:ex_doc,        ">= 0.0.0", only: :dev},
+      {:ex_doc,        "~> 0.19", only: :dev},
       {:earmark,       ">= 0.0.0", only: :dev},
       {:dialyxir, "~> 1.0.0-rc.4", only: [:dev], runtime: false}
     ]
@@ -51,8 +51,7 @@ defmodule Mongodb.Mixfile do
   defp docs do
     [main: "readme",
      extras: ["README.md"],
-     source_ref: "v#{@version}",
-     source_url: "https://github.com/ankhers/mongodb"]
+     source_url: "https://github.com/artifactlabs/mongodb"]
   end
 
   defp description do
@@ -62,6 +61,6 @@ defmodule Mongodb.Mixfile do
   defp package do
     [maintainers: ["Eric Meadows-Jönsson", "Justin Wood"],
      licenses: ["Apache 2.0"],
-     links: %{"GitHub" => "https://github.com/ankhers/mongodb"}]
+     links: %{"GitHub" => "https://github.com/artifactlabs/mongodb"}]
   end
 end
